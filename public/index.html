@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	hey
+	<div id="map"></div>
+
+<script async defer src="app.js"></script>
+<script>
+	function initMap() {
+		var infowindow = new google.maps.InfoWindow();
+
+	    var mapOptions = {
+	      zoom: 12,
+	      center: new google.maps.LatLng(51.5, -0.126),
+	      mapTypeId: google.maps.MapTypeId.ROADMAP
+	    }
+	    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	    infowindow.open(map);
+	}
+
+	
+</script>
+<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLx-RpBna408zN0-KOVfHi8OK8fUVWYPs&callback=initMap">
+    </script>
+</body>
+</html>

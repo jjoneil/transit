@@ -1,0 +1,15 @@
+{
+  "name": "transit",
+  "version": "1.0.0",
+  "description": "Google maps powered transit-accesability ranking app - no more guessing to figure out your options when moving",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "John O'Neil",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
